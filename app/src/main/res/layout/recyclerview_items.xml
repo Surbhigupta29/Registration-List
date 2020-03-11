@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="5dp"
+    card_view:contentPadding="5dp"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardMaxElevation="5dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#F3E5F5"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/ResidentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Name:"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/ShowResidentNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Show Resident Name"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/ResidentName"
+            android:layout_toEndOf="@+id/ResidentName"
+            android:layout_marginLeft="1dp"
+            android:layout_marginStart="19dp" />
+
+        <TextView
+            android:id="@+id/ResidentDOB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age:"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginRight="2dp"
+            android:layout_below="@+id/ResidentName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/ShowResidentDOBTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Show Age"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginStart="11dp"
+            android:layout_below="@+id/ShowResidentNameTextView"
+            android:layout_toRightOf="@+id/ResidentDOB"
+            android:layout_toEndOf="@+id/ResidentDOB" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
